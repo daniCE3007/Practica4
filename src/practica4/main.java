@@ -39,9 +39,59 @@ public class main {
 
             //Empleado
             } else if (opcionMenu == 2) {
-
                 //Codigo de clase y objeto Empleado
+                //Solicitud de Datos al empleado:
+                JOptionPane.showMessageDialog(null,"Para ingresar "
+                        + "bajo el perfil de empleado, complete la siguiente "
+                        + "información");
+                String Nombre = JOptionPane.showInputDialog("Ingrese "
+                        + "su nombre:");
+                String Apellido = JOptionPane.showInputDialog("Ingrese "
+                        + "su apellido:");
+                String IDempleado = JOptionPane.showInputDialog("Ingrese "
+                        + "su IDempleado:");
+                String cedula = JOptionPane.showInputDialog("Ingrese "
+                        + "su cedula:");
+                String correo = JOptionPane.showInputDialog("Ingrese "
+                        + "su correo:");
+                String telefono = JOptionPane.showInputDialog("Ingrese "
+                        + "su telefono:");               
+                
+                
+                //Creación del objeto Empleado:
+                empleado MyEmpleado = new empleado(Nombre,Apellido,IDempleado,
+                        cedula, correo,telefono);
+                                //Confirmación de login:
+                JOptionPane.showMessageDialog(null,"Bienvenid@"
+                        +MyEmpleado.getNombre()+ MyEmpleado.getApellido() + 
+                        "\n ID:" + MyEmpleado.getIDempleado()+
+                        "ah ingresado correctamente.");
 
+                //Menú empleado:
+                int opcionEmpleado = 0;
+                
+                while (opcionEmpleado !=5){
+                opcionEmpleado = Integer.parseInt(JOptionPane.showInputDialog(
+                        "Menu de Empleado\n"
+                        + "1. Nuevo Prestamo\n"
+                        + "2. Añadir Libro\n"
+                        + "3. Ver inventario\n"
+                        + "4. Salir." ));
+                    if (opcionEmpleado == 1){
+                        MyEmpleado.NuevoPrestamo();
+                    } else if(opcionEmpleado == 2){
+                        MyEmpleado.AñadirLibro();
+                    } else if (opcionEmpleado == 3) {
+                        MyEmpleado.VerInventario();
+                    } else if (opcionEmpleado == 4){
+                    JOptionPane.showMessageDialog(null, 
+                            "Usted esta saliendo del sisitema");
+                    }else {
+                    JOptionPane.showMessageDialog(null, 
+                            "Opción inválida, intente de nuevo");
+                    }
+                }
+          
             //Usuario
             } else if (opcionMenu == 3) {
                 
