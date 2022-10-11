@@ -8,9 +8,8 @@ package practica4;
  *
  * @author fanta
  */
+
 public class libro {
-    
-    public class libro {
 
     private String autor;
     private String titulo;
