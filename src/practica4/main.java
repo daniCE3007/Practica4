@@ -36,6 +36,33 @@ public class main {
             if (opcionMenu == 1) {
 
                 //Codigo de clase y objeto Biblioteca
+                String sede = JOptionPane.showInputDialog(null,
+                        "Ingrese la sede de la Biblioteca: ");
+                String numerotelefonico = JOptionPane.showInputDialog
+        (null,"Ingrese el numero telefonico de la "
+                + "Biblioteca: ");
+                String horario = JOptionPane.showInputDialog(null,
+                        "Ingrese el horario de la Biblioteca: ");
+                String IDbiblioteca = JOptionPane.showInputDialog
+        (null,
+                        "Ingrese el ID de la Biblioteca: ");
+                String inventariolibros = JOptionPane.showInputDialog(
+                        null,"Ingrese los libros que hay "
+                                + "en la Biblioteca: ");
+                
+                String historial = JOptionPane.showInputDialog(null,
+                        "Digite si ha ingresado a la Biblioteca"
+                                + " anteriormente: ");
+                biblioteca mybiblioteca = new biblioteca(sede, numerotelefonico,
+                         horario, IDbiblioteca, inventariolibros, historial);
+                
+                JOptionPane.showMessageDialog(null,"Sede: "
+                        + mybiblioteca.getSede()+ "\n" + "Numero Telefonico: "
+                        + mybiblioteca.getNumerotelefonico()+ "\n" + "Horario: "
+                        + mybiblioteca.getHorario()+ "\n" + "ID: "
+                        + mybiblioteca.getIDBiblioteca()+ "\n" + "Inventario: "
+                        + mybiblioteca.getInventarioLibros()+ "\n" + "Historial: "
+                        + mybiblioteca.getHistorial());
 
             //Empleado
             } else if (opcionMenu == 2) {
