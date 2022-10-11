@@ -26,8 +26,6 @@ public class libro {
         this.Disponibilidad = Disponibilidad;
     }
 
-    public libro mylibro = new libro(autor, titulo, genero, IDlibro, Disponibilidad);
-
     // Verificar disponibilidad
 
     public String getAutor() {
