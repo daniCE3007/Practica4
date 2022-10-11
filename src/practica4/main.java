@@ -97,7 +97,7 @@ public class main {
                 //Menú empleado:
                 int opcionEmpleado = 0;
                 
-                while (opcionEmpleado !=5){
+                while (opcionEmpleado !=4){
                 opcionEmpleado = Integer.parseInt(JOptionPane.showInputDialog(
                         "Menu de Empleado\n"
                         + "1. Nuevo Prestamo\n"
