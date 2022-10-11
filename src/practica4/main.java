@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package practica4;
+import javax.swing.JOptionPane;
 
 //Librerias
 import javax.swing.JOptionPane;
