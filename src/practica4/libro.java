@@ -18,7 +18,8 @@ public class libro {
     private String Disponibilidad;
 
     // Constructor de la clase
-    public libro(String Autor, String Titulo, String Genero, String ID, String Disponibilidad) {
+    public libro(String Autor, String Titulo, String Genero, 
+            String ID, String Disponibilidad) {
         this.autor = Autor;
         this.titulo = Titulo;
         this.genero = Genero;
